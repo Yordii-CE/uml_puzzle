@@ -1,4 +1,4 @@
-Download and Try it ▶️ [News App](https://github.com/Yordii-CE/news_app/blob/main/news_app.apk)
+Download and Try it ▶️ [News App](https://github.com/Yordii-CE/uml_puzzle/blob/main/uml_puzzle.apk)
 ### Details
 - Kotlin
 - Android Studio
@@ -11,5 +11,6 @@ Download and Try it ▶️ [News App](https://github.com/Yordii-CE/news_app/blob
 
 
 
-https://github.com/Yordii-CE/uml-puzzle/assets/94014080/865c0f00-d090-42eb-88a1-6aab248c2dd8
+https://github.com/Yordii-CE/uml_puzzle/assets/94014080/d3c01b29-e7b3-4832-b48f-6ddbdb3d4f39
+
 
