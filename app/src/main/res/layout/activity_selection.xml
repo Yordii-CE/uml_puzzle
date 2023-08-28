@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="toStatistics"
+    tools:context=".Selection">
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="toStatistics"
+        android:text="Ve los mejores jugadores"
+        android:textColor="#6750A3"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="310dp"
+        android:layout_height="458dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <TextView
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginBottom="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/yellow_btn"
+            android:gravity="center"
+            android:onClick="toTheme3"
+            android:text="CLINICA"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/yellow_btn"
+            android:gravity="center"
+            android:onClick="toTheme2"
+            android:text="CAJERO AUTOMATICO"
+            android:textAlignment="gravity"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/yellow_btn"
+            android:gravity="center"
+            android:onClick="toTheme1"
+            android:text="CATALOGO TELEFONICO"
+            android:textAlignment="gravity"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="127dp"
+        android:text="UML Puzzle"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Selecciona una tematica para jugar"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:layout_editor_absoluteX="99dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

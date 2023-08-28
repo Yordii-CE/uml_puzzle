@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutApp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Theme1">
+
+    <TextView
+        android:id="@+id/statisticsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="toStatistics"
+        android:text="Estadisticas"
+        android:textColor="#6750A3"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:text="CATALOGO TELEFONICO"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/infoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:onClick="openInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <TextView
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="27dp"
+        android:text="30:00"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/infoContainer"
+        android:layout_width="395dp"
+        android:layout_height="472dp"
+        android:layout_marginTop="30dp"
+        android:background="#2196F3"
+        android:elevation="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Espeficicaciones para el juego"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/closeInfoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:onClick="closeInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <TextView
+            android:layout_width="373dp"
+            android:layout_height="397dp"
+            android:layout_marginTop="40dp"
+            android:text="La ejecucion de el diagrama de caso de uso es de"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/spaces"
+        android:layout_width="296dp"
+        android:layout_height="420dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clock">
+
+        <FrameLayout
+            android:id="@+id/space1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/space_bg"
+            android:contentDescription="actor1">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/space2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/space_bg"
+            android:contentDescription="actor2" />
+
+        <FrameLayout
+            android:id="@+id/space3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/space_bg"
+            android:contentDescription="actor2">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/space4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/space_bg"
+            android:contentDescription="actor1">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/space5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/space_bg"
+            android:contentDescription="actor1">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/space6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/space_bg"
+            android:contentDescription="actor2">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+
+        android:layout_height="175dp"
+        android:layout_marginBottom="30dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/option_bg"
+            android:contentDescription="actor2"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="0"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:autoSizeMinTextSize="20dp" />
+
+        <TextView
+            android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/option_bg"
+            android:contentDescription="actor1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="1"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:autoSizeMinTextSize="20dp" />
+
+        <TextView
+            android:id="@+id/option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/option_bg"
+            android:contentDescription="actor1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="2"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:autoSizeMinTextSize="20dp" />
+
+        <TextView
+            android:id="@+id/option4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/option_bg"
+            android:contentDescription="actor1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="3"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:autoSizeMinTextSize="20dp" />
+
+        <TextView
+            android:id="@+id/option5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/option_bg"
+            android:contentDescription="actor2"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="4"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:autoSizeMinTextSize="20dp" />
+
+        <TextView
+            android:id="@+id/option6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/option_bg"
+            android:contentDescription="actor2"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="5"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:autoSizeMinTextSize="20dp" />
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/finishBtn"
+        android:layout_width="139dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="27dp"
+        android:background="@drawable/yellow_btn"
+        android:onClick="finishGame"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="8dp"
+        android:text="Finish"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spaces" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/gameOverContainer"
+        android:layout_width="match_parent"
+        android:layout_height="326dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="10dp"
+        android:alpha="1"
+        android:background="@drawable/modal_bg"
+        android:elevation="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="300dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:text="Fin del juego"
+            android:textAlignment="center"
+            android:textColor="#3A3A3A"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:width="100dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#3A3A3A"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="100dp"
+            android:text="puntaje"
+            android:textAlignment="center"
+            android:textColor="#3A3A3A"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/score" />
+
+        <LinearLayout
+            android:layout_width="342dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23">
+
+            <TextView
+                android:id="@+id/backMenuBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/menu_btn"
+                android:onClick="backmenu"
+                android:paddingStart="15dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="8dp"
+                android:text="Menu"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/playAgainBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/playagain_btn"
+                android:onClick="startGameAgain"
+                android:paddingStart="15dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="8dp"
+                android:text="Jugar de nuevo"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/playBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="startGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clock"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageView
+        android:id="@+id/actor1"
+        android:layout_width="40dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playBtn"
+        app:srcCompat="@drawable/actor" />
+
+    <ImageView
+        android:id="@+id/actor2"
+        android:layout_width="40dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playBtn"
+        app:srcCompat="@drawable/actor" />
+
+    <TextView
+        android:id="@+id/actorName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-15dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actor1" />
+
+    <TextView
+        android:id="@+id/actorName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-14dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="textEnd"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actor2" />
+
+    <View
+        android:id="@+id/overlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="#000000"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

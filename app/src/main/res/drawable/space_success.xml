@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<solid android:color="#1A28FF00" /> <!-- Color de fondo del elipse -->
+<corners android:radius="3000dp" /> <!-- Radio grande para lograr una forma de elipse -->
+</shape>

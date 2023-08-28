@@ -1,0 +1,44 @@
+[
+  {
+    "theme" : "Clinica",
+    "actors":[
+      {
+        "name" : "Medico",
+        "cases": ["Registrar pacientes", "Programar citas", "Gestionar inventario", "Ver historial medico", "Realizar factura"]
+      },
+      {
+        "name" : "Paciente",
+        "cases": ["Pedir cita"]
+      }
+    ]
+  },
+
+  {
+    "theme" : "Cajero automatico",
+    "actors":[
+      {
+        "name" : "Cliente",
+        "cases": ["Retirar efectivo", "Consultar saldo", "Depositar dinero", "Realizar transferencias", "Cambiar el PIN"]
+      },
+      {
+        "name" : "Administrador",
+        "cases": ["Dar mantenimiento", "Bloquear cuenta"]
+      }
+    ]
+  },
+
+  {
+    "theme" : "Catalogo telefonico",
+    "actors":[
+      {
+        "name" : "Gestor",
+        "cases": ["Agregar contacto", "Buscar contacto", "Editar un contacto", "Eliminar un contacto"]
+      },
+      {
+        "name" : "Sincronizador",
+        "cases": ["Sincronizar contactos", "Exportar datos", "Gestionar duplicados"]
+      }
+    ]
+
+  }
+]
